@@ -1,3 +1,4 @@
+#!/bin/sh
 rabbitmq-plugins enable rabbitmq_management;
 service rabbitmq-server start;
 rabbitmqctl add_user pi pi;

@@ -9,12 +9,12 @@ apt-get install -yqq --no-install-recommends rabbitmq-server  && rm -rf /var/lib
 
 COPY startup.sh  /tmp/startup.sh
 
-
+RUN chmod +x /tmp/startup.sh
 
 RUN [ "cross-build-end" ]  
 
 
-RUN chmod +x /tmp/startup.sh
+
 EXPOSE 5672
 
 ENTRYPOINT ["/tmp/startup.sh"]
