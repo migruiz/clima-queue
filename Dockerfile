@@ -15,7 +15,7 @@ RUN [ "cross-build-end" ]
 
 
 
-EXPOSE 5672
-EXPOSE 15672
+EXPOSE 5672:5672
+EXPOSE 15672:15672
 
 ENTRYPOINT ["/tmp/startup.sh"]
