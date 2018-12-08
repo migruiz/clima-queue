@@ -14,4 +14,4 @@ RUN [ "cross-build-end" ]
 
 EXPOSE 8883 
 
-ENTRYPOINT ["mosquitto  > /dev/null"]
+ENTRYPOINT ["mosquitto"]
