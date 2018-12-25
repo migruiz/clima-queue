@@ -14,4 +14,4 @@ RUN [ "cross-build-end" ]
 
 EXPOSE 8883 
 
-ENTRYPOINT ["mosquitto"]
+ENTRYPOINT ["mosquitto","-c","/etc/mosquitto/conf.d/mosquitto.conf"]
